@@ -9,7 +9,7 @@ export class PaintingService {
 
   constructor() { }
 
-  public getPaintings(): PaintingFragment[] {
+  public initPaintings(): PaintingFragment[] {
     this.pictures = [
       new PaintingFragment({ id: 0, name: "arc" }),
       new PaintingFragment({ id: 1, name: "beard" }),

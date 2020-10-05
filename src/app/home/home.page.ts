@@ -15,7 +15,7 @@ export class HomePage implements OnInit {
   constructor(private paintingService: PaintingService) { }
 
   ngOnInit(): void {
-    this.pictures = this.paintingService.getPaintings();
+    this.pictures = this.paintingService.initPaintings();
     this.pairs = this.splitPairs();
   }
 
