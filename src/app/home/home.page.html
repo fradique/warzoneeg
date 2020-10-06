@@ -11,10 +11,10 @@
     <ion-row *ngFor="let pair of pairs">
       <ion-col></ion-col>
       <ion-col>
-        <ion-img [src]="'assets/img/'+pair[0].name+'.png'" class="painting"></ion-img>
+        <ion-img [src]="'assets/img/'+pair[0].name+'.png'" class="painting" (click)="setModifier(pair[0])" [class.modified]="pair[0].modifier!==undefined" ></ion-img>
       </ion-col>
       <ion-col>
-        <ion-img [src]="'assets/img/'+pair[1].name+'.png'" class="painting"></ion-img>
+        <ion-img [src]="'assets/img/'+pair[1].name+'.png'" class="painting" (click)="setModifier(pair[1])" [class.modified]="pair[1].modifier!==undefined"></ion-img>
       </ion-col>
       <ion-col></ion-col>
     </ion-row>   

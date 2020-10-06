@@ -10,11 +10,7 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },   {
-    path: 'modifier',
-    loadChildren: () => import('./modifier/modifier.module').then( m => m.ModifierPageModule)
-  },
- 
+  } 
 ];
 
 @NgModule({

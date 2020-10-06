@@ -6,6 +6,7 @@ import { PaintingFragment } from './painting-fragment';
 })
 export class PaintingService {
   pictures: PaintingFragment[];
+  selected = Array<PaintingFragment>();
 
   constructor() { }
 
@@ -22,5 +23,10 @@ export class PaintingService {
     ];
 
     return this.pictures;
+  }
+
+  public selectPicture(picture: PaintingFragment, modifier: number) {
+    picture.modifier = modifier;
+    this.selected.push(picture);
   }
 }

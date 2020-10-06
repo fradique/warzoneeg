@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Modifier for {{selectedPicture.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid >
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <div class="square" (click)="selectValue(-2)">-2</div>
+      </ion-col>
+      <ion-col>
+        <ion-item class="square" (click)="selectValue(-1)">-1</ion-item>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>   
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <div class="square" (click)="selectValue(0)">0</div>
+      </ion-col>
+      <ion-col>
+        <ion-item class="square" (click)="selectValue(1)">+1</ion-item>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>   
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <div class="square" (click)="selectValue(2)">+2</div>
+      </ion-col>
+      <ion-col>
+        <ion-item class="square" (click)="selectValue(3)">+3</ion-item>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>   
+  </ion-grid>
+</ion-content>
